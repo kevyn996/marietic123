@@ -329,11 +329,12 @@ body {
 #fh5co-hero {
   background-color: transparent;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
-  width: ;
   background-position: center;
+  height: 100vh; /* Usa el tamaño de la ventana completa */
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   #fh5co-hero {
@@ -360,6 +361,9 @@ body {
   #fh5co-hero .fh5co-intro {
     height: 450px;
   }
+  @media screen and (max-width: 768px) {
+    #fh5co-hero {
+      height: 60vh;
 }
 #fh5co-hero .fh5co-intro > div {
   vertical-align: middle;
@@ -502,7 +506,7 @@ body {
   font-size: 18px;
   line-height: 32px;
   font-weight: 300;
-  justify-content: ;
+  
 }
 
 #fh5co-features,
