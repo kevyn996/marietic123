@@ -1,4 +1,23 @@
 
+.whatsapp-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-bubble a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.whatsapp-bubble a img:hover {
+  transform: scale(1.1);
+}
+
 
 body {
   font-family: "Roboto", Arial, sans-serif;
