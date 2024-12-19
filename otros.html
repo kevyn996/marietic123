@@ -59,13 +59,20 @@
 	  <section id="fh5co-header">
 		<div class="container col-md-12">
 		  <nav role="navigation">
-			<ul class="pull-left left-menu">
-				<li  class="fh5co-cta-btn"><a href="index.html">Inicio</a></li>
-			  <li class="fh5co-cta-btn"><a href="vitaminas.html">Vitaminas</a></li>
-			  <li class="fh5co-cta-btn"><a href="corporales.html">Corporales</a></li>
-			  <li class="fh5co-cta-btn"><a href="faciales.html">Faciales</a></li>
-			  <li class="fh5co-cta-btn"><a href="otros.html">Micropigmentación</a></li>
-			
+			<ul  class="pull-left left-menu"> 
+				<li class="fh5co-cta-btn dropdown"><a href="index.html">Inicio</a></li>
+				<li class="fh5co-cta-btn dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+					  Nuestros Tratamientos <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+					  <li><a href="vitaminas.html">Vitaminas</a></li>
+					  <li><a href="corporales.html">Corporales</a></li>
+					  <li><a href="faciales.html">Faciales</a></li>
+					  <li><a href="otros.html">Micropigmentación</a></li>
+					</ul>
+				  </li>
+				</ul>
 			</ul>
 			<h1 class="animate-box" id="fh5co-logo"><a href="index.html">Marietic<span></span></a></h1>
 			<ul class="pull-right right-menu">
@@ -230,8 +237,8 @@
 				<h3 class="animate-box"><label for="email">Subscribete a nuestro boletin</label></h3>
 				<form action="#" method="post" class="animate-box">
 					<i class="fh5co-icon icon-paper-plane"></i>
-					<input type="email" class="form-control" placeholder="Enter your email" id="email" name="email">
-					<input type="submit" value="Send" class="btn btn-primary">
+					<input type="email" class="form-control" placeholder="Ingresa tu correo" id="email" name="email">
+					<input type="submit" value="Enviar" class="btn btn-primary">
 				</form>
 
 			</div>
@@ -284,20 +291,23 @@
 								<img src="images/whatsapp (1).png" alt="WhatsApp">
 						</a>
 					</div>
+				
 			</div>
 			<div class="fh5co-copyright animate-box">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<p class="fh5co-left"><small>&copy; 2024 <a href="index.html">Marietic</a> salud & estética.</small></p>
-							<p class="fh5co-right">Todos los derechos reservados</a> </a></small></p>
+							<p class="fh5co-left"><small>&copy; 2024 <a href="index.html">Todos los derechos reservados.</small></p></a>
+							<p class="fh5co-right"> Web design <a href="">kevyn.web@gmail.com</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			</footer>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+			<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->

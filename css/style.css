@@ -284,18 +284,72 @@ body {
 }
 #fh5co-header nav {
   position: relative;
+  
 }
 #fh5co-header nav ul {
   padding: 15px;
   margin: 0;
   z-index: 2;
+  background-color: transparent;
   position: relative;
+
+/* Asegura que el contenedor principal no desplace el dropdown */
+#fh5co-header nav ul {
+  background-color: transparent;
+  position: relative;
+}
+
+/* Estilo específico para dropdown */
+.dropdown-menu {
+  position: absolute; /* Posición absoluta respecto al contenedor padre */
+  top: 100%; /* Despliega justo debajo del elemento padre */
+  left: 0; /* Alineado a la izquierda del padre */
+  background-color: rgba(0, 0, 0, 0); /* Fondo oscuro semi-transparente */
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Sombra ligera */
+  border-radius: 40px; /* Bordes redondeados */
+  padding: 15px -15px;
+  min-width: 150px; /* Ancho mínimo del dropdown */
+}
+
+
+
+.dropdown-menu li a:hover {
+  background-color: #ffffff; /* Fondo blanco al pasar el mouse */
+  color: #000000; /* Texto negro */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 }
 @media screen and (max-width: 1200px) {
   #fh5co-header nav ul {
-    display: none;
+    display: none; /* Oculta el menú */
+  }
+
+  .fh5co-nav-toggle {
+    display: block; /* Muestra el botón de menú */
   }
 }
+.fh5co-nav-toggle {
+  display: none; /* Oculto por defecto */
+}
+
 #fh5co-header nav ul li {
   display: inline;
   
@@ -308,6 +362,7 @@ body {
 }
 #fh5co-header nav ul li a:hover {
   color: rgb(0, 0, 0);
+  background-color: #e6e0e0;
 
 }
 #fh5co-header nav ul li.fh5co-cta-btn a {
@@ -318,7 +373,8 @@ body {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
-  border-radius: 40px;
+  border-radius: 40px; 
+  
 }
 
 
@@ -332,10 +388,12 @@ body {
   height: 100vh; /* Ajusta al tamaño completo de la pantalla */
   width: 100%;
   background-position: center;
+  
 }
 @media screen and (max-width: 480px) {
   #fh5co-hero {
     height: 450px;
+    
   }
 }
 #fh5co-hero .fh5co-overlay {
@@ -347,12 +405,14 @@ body {
   background: #2a2d36;
   opacity: .54;
   z-index: 9;
+  
 }
 #fh5co-hero .fh5co-intro {
   display: table;
   width: 100%;
   z-index: 10;
   position: relative;
+  
 }
 @media screen and (max-width: 480px) {
   #fh5co-hero .fh5co-intro {
@@ -1305,6 +1365,7 @@ body {
   -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
 }
+
 
 .fh5co-nav-toggle {
   position: fixed;
