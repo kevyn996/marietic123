@@ -7,9 +7,35 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Daniel Eden
 */
 
+@keyframes bounceIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.8) translateY(-50px);
+  }
+  50% {
+      opacity: 1;
+      transform: scale(1.2);
+  }
+  70% {
+      transform: scale(0.95);
+  }
+  100% {
+      transform: scale(2);
+  }
+}
+
+.animated-bounce-in {
+  animation: bounceIn 1.5s cubic-bezier(0.215, 0.610, 0.355, 1) both;
+  transform-origin: center;
+}
+
+
+
+
+
 .animated {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
