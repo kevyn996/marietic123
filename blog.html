@@ -1,0 +1,383 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--> 
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--> 
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--> 
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--> 
+<head> 
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Blog - Marietic Salud & Estética</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+	<!-- SEO Básico --> 
+	<meta name="description" content="Blog de Marietic: Consejos de belleza, salud y bienestar. Información sobre tratamientos estéticos, cuidado facial, corporal y más para tu belleza en Miraflores."> 
+	<meta name="keywords" content="blog estética, consejos belleza, blog salud, cuidado facial, tratamientos corporales, Marietic, blog estética Miraflores"> 
+	<meta name="author" content="Marietic">
+    
+    <!-- Robots meta tag -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
+    <!-- URL Canónica -->
+    <link rel="canonical" href="https://marietic.com/blog.html" />
+
+    <!-- Cargar el archivo de Leaflet (librería para OpenStreetMap) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	
+	<!-- Preconnect para recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+	
+    <!-- Facebook Open Graph --> 
+    <meta property="og:title" content="Blog - Marietic Salud & Estética" /> 
+    <meta property="og:description" content="Blog de Marietic: Consejos de belleza, salud y bienestar. Información sobre tratamientos estéticos y novedades en el mundo de la belleza." /> 
+    <meta property="og:image" content="https://marietic.com/images/logo-marietic.svg" /> 
+    <meta property="og:image:width" content="500" /> 
+    <meta property="og:image:height" content="500" /> 
+    <meta property="og:url" content="https://marietic.com/blog.html" /> 
+    <meta property="og:site_name" content="Marietic" />
+
+    <!-- Twitter Cards --> 
+    <meta name="twitter:title" content="Blog - Marietic Salud & Estética" /> 
+    <meta name="twitter:description" content="Consejos expertos de belleza y salud. Mantente informado con nuestro blog especializado." /> 
+    <meta name="twitter:image" content="https://marietic.com/images/espacio.jpg" /> 
+    <meta name="twitter:card" content="summary_large_image" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory --> 
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'> 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> 
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> 
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
+	<link rel="manifest" href="/site.webmanifest"> 
+	 
+	<!-- Animate.css --> 
+	<link rel="stylesheet" href="css/animate.css"> 
+	<!-- Flexslider --> 
+	<link rel="stylesheet" href="css/flexslider.css"> 
+	<!-- Icomoon Icon Fonts--> 
+	<link rel="stylesheet" href="css/icomoon.css"> 
+	<!-- Magnific Popup --> 
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	<!-- Bootstrap  --> 
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+	
+	<!-- Loader -->
+	<div class="fh5co-loader"></div>
+  
+	<div id="fh5co-page">
+	  <section id="fh5co-header">
+		<div class="container col-md-12">
+		  <nav role="navigation">
+			<ul class="pull-left left-menu"> 
+				<li class="fh5co-cta-btn dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+					  Nuestros Tratamientos <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+					  <li><a href="blog.html">Blog</a></li>
+					  <li><a href="faciales.html">Faciales</a></li>
+					  <li><a href="vitaminas.html">Vitaminas</a></li>
+					  <li><a href="corporales.html">Corporales</a></li>
+					  <li><a href="micropigmentacion.html">Micropigmentación</a></li>
+					  <li><a href="drenajelinfatico.html">Masajes Post-operatorios</a></li>
+					  <li><a href="avances.html">Nuestros últimos avances </a></li>
+					</ul>
+				  </li>
+				</ul>
+			<h1 class="animate-box" id="fh5co-logo">
+				<a href="index.html">Blog de Salud <br> y Belleza</a>
+			</h1>
+			<ul class="pull-right right-menu">
+				<li class="fh5co-cta-btn">
+					<a href="pdf/Catalago vitaminas Marietic.pdf" download="Catalogo_Vitaminas_Marietic.pdf" rel="noopener noreferrer">Catálogo Vitaminas</a>
+				</li>
+				<li class="fh5co-cta-btn">
+				  <a href="pdf/Catalago estético Marietic.pdf" download="Catalogo_Corporales_Marietic.pdf" rel="noopener noreferrer">Catálogo Corporales</a>
+				</li>
+			</ul>
+		  </nav>
+		</div>
+	  </section>
+
+      <!-- Banner del Blog -->
+      <section id="fh5co-hero" class="js-fullheight" style="background-image: url(images/espacio.jpg);" data-next="yes">
+        <div class="fh5co-overlay"></div>
+        <div class="container">
+            <div class="fh5co-intro js-fullheight">
+                <div class="fh5co-intro-text">
+                    <div class="fh5co-center-position margin-bottom-2">
+                        <h2 class="mb-6">Muy pronto compartiremos consejos y novedades sobre estética y bienestar</h2>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fh5co-learn-more">
+            <a href="#" class="scroll-btn">
+                <span class="text">Próximamente</span>
+                <span class="arrow"><i class="icon-chevron-down"></i></span>
+            </a>
+        </div>
+      </section>
+
+      <!-- Sección de introducción al blog -->
+      <section id="fh5co-features">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="fh5co-lead">Nuestro Blog</h2>
+              <p class="fh5co-sub-lead text-justify">Próximamente, este espacio estará dedicado a compartir información valiosa 
+                sobre tratamientos estéticos, consejos de belleza, últimas tendencias en cuidado facial y corporal, y todo lo que 
+                necesitas saber para mantener tu piel y cuerpo en óptimas condiciones. Nuestros especialistas 
+                estarán compartiendo su conocimiento para ayudarte a tomar decisiones informadas sobre tu salud y belleza.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Próximas entradas del blog -->
+      <section id="fh5co-projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="fh5co-lead">Próximas Publicaciones</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Entrada de blog 1 -->
+            <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+              <div class="fh5co-project-item">
+                <img src="images/hidratacionfacial.png" alt="Hidratación Facial" class="img-responsive">
+                <div class="fh5co-text">
+                  <h2 class="text-center">La importancia de la hidratación facial</h2>
+                  <p>Próximamente compartiremos los beneficios de mantener tu piel hidratada y cómo nuestros tratamientos pueden ayudarte a lograrlo.</p>
+                  <div class="text-center">
+                    <span class="btn-wsp">Próximamente</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Entrada de blog 2 -->
+            <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+              <div class="fh5co-project-item">
+                <img src="images/inmunodefensa.jpg" alt="Vitaminas para la piel" class="img-responsive">
+                <div class="fh5co-text">
+                  <h2 class="text-center">Vitaminas que tu piel necesita</h2>
+                  <p>Descubre cómo las vitaminas endovenosas pueden mejorar no solo tu salud interna sino también la apariencia de tu piel.</p>
+                  <div class="text-center">
+                    <span class="btn-wsp">Próximamente</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Entrada de blog 3 -->
+            <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+              <div class="fh5co-project-item">
+                <img src="images/celulitis.png" alt="Combatir la celulitis" class="img-responsive">
+                <div class="fh5co-text">
+                  <h2 class="text-center">Cómo combatir la celulitis eficazmente</h2>
+                  <p>Te compartiremos los mejores tratamientos y consejos para reducir la apariencia de la celulitis y conseguir una piel más tersa.</p>
+                  <div class="text-center">
+                    <span class="btn-wsp">Próximamente</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Entrada de blog 4 -->
+            <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+              <div class="fh5co-project-item">
+                <img src="images/1232123.jpg" alt="Micropigmentación" class="img-responsive">
+                <div class="fh5co-text">
+                  <h2 class="text-center">Todo sobre la micropigmentación</h2>
+                  <p>Aprende sobre los distintos tipos de micropigmentación, sus beneficios y cómo elegir el tratamiento adecuado para ti.</p>
+                  <div class="text-center">
+                    <span class="btn-wsp">Próximamente</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Entrada de blog 5 -->
+            <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+              <div class="fh5co-project-item">
+                <img src="images/masajedrenajelinfaticocorporral.jpg" alt="Drenaje linfático" class="img-responsive">
+                <div class="fh5co-text">
+                  <h2 class="text-center">Beneficios del drenaje linfático</h2>
+                  <p>Conoce por qué el drenaje linfático es esencial para la recuperación post-operatoria y cómo puede ayudarte a reducir la inflamación.</p>
+                  <div class="text-center">
+                    <span class="btn-wsp">Próximamente</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Entrada de blog 6 -->
+            <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+              <div class="fh5co-project-item">
+                <img src="images/masajedrenajelinfaticocorporral.jpg" alt="Nuevas tecnologías estéticas" class="img-responsive">
+                <div class="fh5co-text">
+                  <h2 class="text-center">Avances tecnológicos en estética</h2>
+                  <p>Te contaremos sobre las últimas innovaciones en tratamientos estéticos y cómo pueden ayudarte a conseguir resultados sorprendentes.</p>
+                  <div class="text-center">
+                    <span class="btn-wsp">Próximamente</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de suscripción al blog -->
+      <section id="fh5co-features" style="background-color: #f7f7f7;">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-12 animate-box">
+              <h2 class="fh5co-lead">Mantente Informado</h2>
+              <p class="fh5co-sub-lead">Suscríbete para recibir notificaciones cuando publiquemos nuevo contenido</p>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <form class="form-inline">
+                    <div class="col-md-8 col-sm-8">
+                      <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Tu email" style="width: 100%;">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                      <button type="submit" class="btn btn-primary">Suscribirme</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WhatsApp y redes sociales flotantes -->
+      <div class="whatsapp-bubble animate-box">
+        <a href="https://wa.me/51906631139" target="_blank" rel="noopener noreferrer">
+          <img src="images/whatsapp (1).png" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/marieticsalud" target="_blank" rel="noopener noreferrer">
+          <img src="images/social.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@marieticsalud" target="_blank" rel="noopener noreferrer">
+          <img src="images/tik-tok.png" alt="TikTok">
+        </a>
+        <a href="https://www.facebook.com/share/1ASKZchiaf/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+          <img src="images/facebook.png" alt="Facebook">
+        </a>
+      </div>
+
+      <!-- Sección de ubicación -->
+      <section id="fh5co-features" style="background-color: #f7f7f7;">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-12">
+              <h2 class="fh5co-lead animate-box">Nuestra ubicación</h2>
+              <div class="row">
+                <!-- Map column -->
+                <div class="col-md-6 animate-box">
+                  <div id="map" style="height: 300px; width: 100%; margin-bottom: 20px;"></div>
+                </div>
+                
+                <!-- Contact info column -->
+                <div class="col-md-6 animate-box">
+                  <div class="fh5co-feature">
+                    <h3>Visítanos</h3>
+                    <p>
+                      <strong>Dirección:</strong> Av. Alfredo Benavides 264, Miraflores, Lima<br>
+                      <strong>Horario:</strong> Lunes a Viernes: 09:00 - 20:00<br>
+                      Sábados: 09:00 - 20:00<br>
+                      <strong>Whatsapp:</strong> <a href="https://wa.me/51906631139?text=Hola%20👋%2C%20vi%20la%20p%C3%A1gina%20web%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%3A" target="_blank" rel="noopener noreferrer">+51 906 631 139</a><br>
+                      <strong>Email:</strong> <a href="mailto:info@marietic.com" target="_blank" rel="noopener noreferrer">info@marietic.com</a>
+                    </p>
+                    <a href="https://maps.app.goo.gl/WyHfDsyRaBGDxhFM6" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Cómo llegar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="fh5co-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>&copy; 2025 Marietic Salud & Estética. Todos los derechos reservados. <span>Diseñado <i class="icon-heart"></i> por <a href="mailto:kevyn.web@gmail.com?subject=Consulta%20sobre%20diseño%20web&body=Hola%2C%20me%20interesa%20saber%20más%20sobre%20tus%20servicios." target="_blank" rel="noopener noreferrer">kevyn.web</a></span></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Scripts -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.flexslider-min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/magnific-popup-options.js"></script>
+      <script src="js/jquery.style.switcher.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/jquery.cookie.js"></script>
+
+      <!-- Script para el mapa -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Initialize map only when DOM is fully loaded
+          var map = L.map('map').setView([-12.1245504, -77.0309146], 16);
+          
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+          
+          var marker = L.marker([-12.1245504, -77.0309146]).addTo(map);
+          marker.bindPopup("<b>Marietic - Salud & Estética</b><br><a href='https://maps.app.goo.gl/WyHfDsyRaBGDxhFM6' target='_blank' rel='noopener noreferrer'>Ver en Google Maps</a>").openPopup();
+        });
+      </script>
+
+      <!-- Script para layout switching -->
+      <script>
+        $(function(){
+          if ($.cookie('layoutCookie') != '') {
+            $('body').addClass($.cookie('layoutCookie'));
+          }
+
+          $('a[data-layout="boxed"]').click(function(event){
+            event.preventDefault();
+            $.cookie('layoutCookie', 'boxed', { expires: 7, path: '/'});
+            $('body').addClass($.cookie('layoutCookie'));
+          });
+
+          $('a[data-layout="wide"]').click(function(event){
+            event.preventDefault();
+            $('body').removeClass($.cookie('layoutCookie'));
+            $.removeCookie('layoutCookie', { path: '/' });
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>

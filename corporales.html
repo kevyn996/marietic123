@@ -1,74 +1,125 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Marietic Salud & Estética</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Centro de salud y estética especializado en tratamientos personalizados para realzar tu belleza y bienestar. " />
-	<meta name="keywords" content="Tu bienestar es nuestra prioridad" />
-	<meta name="author" content="kevyn.web" />
-
- 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Tratamientos Corporales | Marietic Salud & Estética</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
 	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Bootstrap  -->
+	<!-- SEO Básico --> 
+	<meta name="description" content="Tratamientos corporales personalizados en Marietic: drenaje linfático postoperatorio, reducción de medidas, cavitación, radiofrecuencia y más en Miraflores."> 
+	<meta name="keywords" content="tratamientos corporales, drenaje linfático, postoperatorio, reducción de medidas, cavitación, radiofrecuencia, estética corporal, Marietic Miraflores"> 
+	<meta name="author" content="Marietic">
+    
+    <!-- Robots meta tag -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
+    <!-- URL Canónica -->
+    <link rel="canonical" href="https://marietic.com/corporales.html" />
+
+    <!-- Preload importante CSS -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/bootstrap.css" as="style">
+    
+    <!-- Cargar el archivo de Leaflet (librería para OpenStreetMap) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	
+	<!-- Preconnect para recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+	
+    <!-- Facebook Open Graph --> 
+    <meta property="og:title" content="Tratamientos Corporales | Marietic Salud & Estética" /> 
+    <meta property="og:description" content="Tratamientos corporales personalizados en Marietic: reducción de medidas, cavitación, radiofrecuencia y más." /> 
+    <meta property="og:image" content="https://marietic.com/images/logo-marietic.svg" /> 
+    <meta property="og:image:width" content="500" /> 
+    <meta property="og:image:height" content="500" /> 
+    <meta property="og:url" content="https://marietic.com/corporales.html" /> 
+    <meta property="og:site_name" content="Marietic" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards --> 
+    <meta name="twitter:title" content="Tratamientos Corporales | Marietic Salud & Estética" /> 
+    <meta name="twitter:description" content="Especialistas en tratamientos corporales en Miraflores: drenaje linfático, reducción de medidas y más." /> 
+    <meta name="twitter:image" content="https://marietic.com/images/corporales.jpg" /> 
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Schema.org mejorado para el servicio específico -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Marietic Salud & Estética",
+      "url": "https://marietic.com/corporales.html",
+      "logo": "https://marietic.com/images/logo-marietic.svg",
+      "image": "https://marietic.com/images/corporales.jpg",
+      "description": "Centro especializado en tratamientos corporales no invasivos para reducción de medidas y mejora estética en Miraflores, Lima.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Alfredo Benavides 264",
+        "addressLocality": "Miraflores",
+        "addressRegion": "Lima",
+        "addressCountry": "PE",
+        "postalCode": "15074"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-12.1245504",
+        "longitude": "-77.0309146"
+      },
+      "telephone": "+51906631139",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "name": "Tratamientos Corporales",
+        "description": "Tratamientos corporales personalizados: drenaje linfático, cavitación, radiofrecuencia y más."
+      }
+    }
+    </script>
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> 
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
+	<link rel="manifest" href="/site.webmanifest"> 
+
+    <!-- CSS -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700&display=swap' rel='stylesheet'> 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/animate.css"> 
+	<link rel="stylesheet" href="css/flexslider.css"> 
+	<link rel="stylesheet" href="css/icomoon.css"> 
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
 	<link rel="stylesheet" href="css/bootstrap.css">
-
 	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
-	<link rel="stylesheet" id="theme-switch" href="css/style.css">
-	<!-- End demo purposes only -->
-
-	</style>
-	<!-- End demo purposes only -->
-
-
+	
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
-	</head>
-
-
-	<!-- 
-		INFO:
-		Add 'boxed' class to body element to make the layout as boxed style.
-		Example: 
-		<body class="boxed">	
-	-->
-	<body>
+    
+    
+</head>
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#contenido-principal" class="skip-to-content">Saltar al contenido principal</a>
 	
 	<!-- Loader -->
 	<div class="fh5co-loader"></div>
@@ -77,418 +128,357 @@
 	  <section id="fh5co-header">
 		<div class="container col-md-12">
 		  <nav role="navigation">
-			<ul  class="pull-left left-menu"> 
-				<li class="fh5co-cta-btn dropdown"><a href="index.html">Inicio</a></li>
+			<ul class="pull-left left-menu"> 
+				<li class="fh5co-cta-btn"><a href="index.html">Inicio</a></li>
 				<li class="fh5co-cta-btn dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 					  Nuestros Tratamientos <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" role="menu">
-					  <li><a href="vitaminas.html">Vitaminas</a></li>
-					  <li><a href="corporales.html">Corporales</a></li>
-					  <li><a href="faciales.html">Faciales</a></li>
-					  <li><a href="otros.html">Micropigmentación</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="faciales.html">Faciales</a></li>
+						<li><a href="vitaminas.html">Vitaminas</a></li>
+						<li><a href="corporales.html">Corporales</a></li>
+						<li><a href="micropigmentacion.html">Micropigmentación</a></li>
+						<li><a href="drenajelinfatico.html">Masajes Post-operatorios</a></li>
+						<li><a href="avances.html">Nuestros últimos avances</a></li>
 					</ul>
-				  </li>
-				</ul>
+				</li>
 			</ul>
-			<h1 class="animate-box" id="fh5co-logo"><a href="index.html">Marietic<span></span></a></h1>
+			<h1 class="animate-box" id="fh5co-logo">
+				<a href="index.html">Reducción de medidas <span></span></a>
+			</h1>
 			<ul class="pull-right right-menu">
-			  <li class="fh5co-cta-btn"><a href="https://drive.google.com/file/d/1LA3oS972cHAzobTQKTsTZ5jnyMg1ya-r/view?usp=sharing"
-				 target="_blank">Catalago vitaminas</a></li>
-			  <li class="fh5co-cta-btn"><a href="https://drive.google.com/file/d/1jexJYbF02JfFYx0u8P6R5GyQfpVoiMyY/view?usp=sharing"
-				 target="_blank">Catalago corporales</a></li>
+				<li class="fh5co-cta-btn">
+					<a href="pdf/Catalago vitaminas Marietic.pdf" download="Catalogo_Vitaminas_Marietic.pdf" rel="noopener noreferrer">Catálogo Vitaminas</a>
+				</li>
+				<li class="fh5co-cta-btn">
+				  <a href="pdf/Catalago estético Marietic.pdf" download="Catalogo_Corporales_Marietic.pdf" rel="noopener noreferrer">Catálogo Corporales</a>
+				</li>
 			</ul>
 		  </nav>
 		</div>
 	  </section>
-		<section id="fh5co-hero" class="js-fullheight" style="background-image: url(images/cavita.jpg );" data-next="yes">
-			<div class="fh5co-overlay"></div>
-			<div class="container">
-				<div class="fh5co-intro js-fullheight">
-					<div class="fh5co-intro-text">
-						<!-- 
-							INFO:
-							Change the class to 'fh5co-right-position' or 'fh5co-center-position' to change the layout position
-							Example:
-							<div class="fh5co-right-position">
-						-->
-						<div class="fh5co-center-position margin-bottom-2">
-							<h2 class="animate-box mb-6">Tratamientos corporales</h2>
-							<p class="animate-box" m> <a href="https://wa.me/51906631139" target="_blank" class="btn btn-primary">¡Agenda tu cita ahora!</a></p>
-						</div>
+
+	  <section id="fh5co-hero" class="js-fullheight" style="background-image: url(images/cavita.jpg);" data-next="yes">
+		<div class="fh5co-overlay"></div>
+		<div class="container">
+			<div class="fh5co-intro js-fullheight">
+				<div class="fh5co-intro-text">
+					<div class="fh5co-center-position margin-bottom-2">
+						<h2 class="animate-box mb-6">Donde tu cuerpo y tus metas se encuentran</h2>
+						<p class="animate-box"><a href="https://wa.me/51906631139" target="_blank" rel="noopener noreferrer" class="btn btn-primary">¡Agenda tu cita ahora!</a></p>
 					</div>
 				</div>
 			</div>
-			<div class="fh5co-learn-more animate-box">
-				<a href="#" class="scroll-btn">
-					<span class="text">Nuestros tratamientos</span>
-					<span class="arrow"><i class="icon-chevron-down"></i></span>
-				</a>
-			</div>
-		</section>
-		<!-- END #fh5co-hero -->
+		</div>
+		<div class="fh5co-learn-more animate-box">
+			<a href="#contenido-principal" class="scroll-btn">
+				<span class="text">Nuestros tratamientos</span>
+				<span class="arrow"><i class="icon-chevron-down"></i></span>
+			</a>
+		</div>
+	  </section>
+	  <!-- END #fh5co-hero -->
 
-
-		<section id="fh5co-features">
-			<div class="container">
-			  <div class="row ">
-				<div class="col-md-12 text-center">
-				  <h2 class="fh5co-lead animate-box text-center"  >Masajes Post Operatorios</h2>
-						<p class="fh5co-sub-lead animate-box text-justify">Un masaje postoperatorio es 
-							una forma suave de masaje que aumenta el flujo sanguíneo y promueve 
-							la recuperación al estar especialmente enfocado al sistema linfático.
-							 El sistema linfático ayuda a procesar los desechos y absorbe los líquidos.
-							Después de una cirugía, estos líquidos pueden endurecerse, lo que a menudo
-								 es doloroso. Un masaje postoperatorio previene y trata este endurecimiento
-								  de los líquidos al reducir la inflamación y favorecer la circulación 
-								  en la zona afectada.El drenaje linfático post operatorio es una de las 
-								  mejores fórmulas para evitar las molestias e inflamación que puede surgir
-								   tras la cirugía.
-								</div>
-							</div>
-						  </section>
-						  <section id="fh5co-projects">
-							<div class="container">
-							  <div class="row ">
-								<div class="col-md-12 text-center">
-							
-							<div class="row">
-					<div id="Masajes de drenaje linfatico post operatorio facial" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="corporales.html#Masajes de drenaje linfatico post operatorio facial" class="fh5co-project-item ">
-							<img src="images/masajedrenajelinfaticofacial.png" alt="Image" class="img-responsive">
-							<div class="fh5co-text">
-								<h2 class="text-center">Masajes de drenaje linfatico post operatorio facial</h2>
-								<p>Consiste en una serie de maniobras suaves, ligeras y concretas y con un orden 
-									determinado que buscan ayudar a la linfa, que es la que provoca la inflamación,
-									 a que llegue a sus nódulos correspondientes y al torrente sanguíneo. Por lo tanto,
-									  este masaje ha de estimular los nódulos principales y guiar la linfa para que
-									   pueda volver a su sitio para drenar el liquido.
-
-									Opcionalmente puede ser acompañado de algún dispositivo de ultrasonidos y 
-									carboxiterapia que mejore el resultado final.
-							
-							</div>
-						</a>
-					</div>
-					<div id="drenajelinfatico" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="corporales.html#drenajelinfatico" class="fh5co-project-item ">
-							<img src="images/masajedrenajelinfaticocorporral.jpg" alt="Image" class="img-responsive">
-							<div class="fh5co-text">
-								<h2 class="text-center">Masajes de drenaje linfatico post operatorio corporal</h2>
-								<p>Consiste en una serie de maniobras suaves, ligeras y concretas y con un orden
-									 determinado que buscan ayudar a la linfa, que es la que provoca la inflamación,
-									  a que llegue a sus nódulos correspondientes y al torrente sanguíneo. Por lo
-									   tanto, este masaje ha de estimular los nódulos principales y guiar la linfa
-									    para que pueda volver a su sitio para drenar el liquido.
-
-									Opcionalmente puede ser acompañado de algún dispositivo de ultrasonidos y
-									 carbpxiteraía que mejore el resultado final.
-							</div>
-						</a>
-					</div>
+	  <section id="fh5co-features">
+		<div class="container">
+			<div class="row text-center ">
+				<div class="col-md-12  text-center ">
 					
-					
+					<h2 class="fh5co-lead animate-box fadeInUp animated">Tratamientos reductivos</h2>
+					<p class="fh5co-sub-lead animate-box text-justify fadeInUp animated">Los tratamientos estéticos no invasivos 
+						ofrecen diversas alternativas para mejorar la apariencia corporal y combatir 
+						problemas específicos como grasa localizada, flacidez y celulitis.
+						Procedimientos como la cavitación, ultrasonido, carboxiterapia y electroestimulación 
+						ayudan a tonificar el cuerpo, reducir medidas y revitalizar la piel. Estas técnicas,
+						 al ser seguras y no quirúrgicas, permiten obtener resultados visibles, como glúteos
+						  más firmes y una figura más moldeada, formando parte de paquetes completos como los siguientes:</p>
 				</div>
 			</div>
 		</div>
 	</section>
-			<!-- END #fh5co-projects -->
 
-		<section id="fh5co-features">
-			<div class="container">
-				<div class="row text-center ">
-					<div class="col-md-12  text-center ">
-						
-						<h2 class="fh5co-lead animate-box">Tratamientos reductivos</h2>
-						<p class="fh5co-sub-lead animate-box text-justify">Los tratamientos estéticos no invasivos 
-							ofrecen diversas alternativas para mejorar la apariencia corporal y combatir 
-							problemas específicos como grasa localizada, flacidez y celulitis.
-							Procedimientos como la cavitación, ultrasonido, carboxiterapia y electroestimulación 
-							ayudan a tonificar el cuerpo, reducir medidas y revitalizar la piel. Estas técnicas,
-							 al ser seguras y no quirúrgicas, permiten obtener resultados visibles, como glúteos
-							  más firmes y una figura más moldeada, formando parte de paquetes completos como los siguientes:</p>
+	  <section id="fh5co-projects">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+						<div class="fh5co-project-item">
+						  <img src="images/fastreduction.png" alt="Tratamiento Fast Reduction con cavitación, ondas rusas y carboxiterapia" class="img-responsive">
+						  <div class="fh5co-text">
+							<h2 class="text-center">Fast reduction</h2>
+							<p>
+							  Es un tratamiento no invasivo ideal para eliminar la grasa 
+							  localizada mediante la cavitación, que utiliza ultrasonidos de baja frecuencia 
+							  para disolver las células adiposas. También incluye las Ondas Rusas, 
+							  que tonifican los músculos mediante electroestimulación, y la carboxiterapia, 
+							  que oxigena las células con infiltraciones de dióxido de carbono.
+							  Estos procedimientos ayudan a reducir volumen, disminuir la celulitis,
+							  mejorar la firmeza y elasticidad de la piel, logrando resultados visibles y duraderos.
+							</p>
+							<div class="text-center">
+							  <a href="https://wa.me/51906631139?text=Hola%2C%20me%20interesa%20el%20tratamiento%20Fast%20Reduction.%20¿Podrían%20brindarme%20más%20información%3F" target="_blank" rel="noopener noreferrer" class="btn-wsp">Consulta aquí</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					  
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+						<div class="fh5co-project-item">
+						  <img src="images/hidro.png" alt="Procedimiento de Hidrolipo corporal en abdomen" class="img-responsive">
+						  <div class="fh5co-text">
+							<h2 class="text-center">Hidrolipo</h2>
+							<p>
+							  Consta de dos fases: primero, se realiza la infiltración del suero en la zona a 
+							  tratar, provocando una reacción del tejido adiposo. Luego, aplicamos ultrasonidos de baja frecuencia 
+							  para romper las células grasas sin dañar los tejidos circundantes. La sesión dura 
+							  aproximadamente 60 minutos por zona, y la cantidad de sesiones se determina según el área a tratar.
+							  Los resultados incluyen la reducción de grasa localizada, abdomen y flancos, 
+							  además de mejorar el aspecto de la piel combatiendo la celulitis.
+							</p>
+							<div class="text-center">
+							  <a href="https://wa.me/51906631139?text=Hola%2C%20quisiera%20información%20sobre%20el%20tratamiento%20Hidrolipo%20corporal." target="_blank" rel="noopener noreferrer" class="btn-wsp">Consulta aquí</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					  
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+						<div class="fh5co-project-item">
+						  <img src="images/gluteos tonificados.png" alt="Terapia de glúteos tonificados con electroestimulación" class="img-responsive">
+						  <div class="fh5co-text">
+							<h2 class="text-center">Glúteos tonificados</h2>
+							<p>
+							  Este tratamiento utiliza la electroestimulación para contraer 
+							  los músculos, logrando modelar la figura a través de la tonificación muscular 
+							  y combatiendo eficazmente la flacidez. Sus beneficios incluyen potenciar la
+							  musculatura para que la piel luzca más firme, mejorar la hipertrofia muscular
+							  y facilitar la reducción de centímetros al disminuir la adiposidad. Además,
+							  favorece la circulación estimulando el retorno venoso y linfático, eliminando 
+							  líquidos retenidos y mejorando la apariencia de la celulitis.
+							</p>
+							<div class="text-center">
+							  <a href="https://wa.me/51906631139?text=Hola%2C%20deseo%20información%20sobre%20el%20tratamiento%20Glúteos%20Tonificados." target="_blank" rel="noopener noreferrer" class="btn-wsp">Consulta aquí</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					  
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+						<div class="fh5co-project-item">
+						  <img src="images/radiofrecuencia.png" alt="Aplicación de radiofrecuencia corporal para reafirmar la piel" class="img-responsive">
+						  <div class="fh5co-text">
+							<h2 class="text-center">Radiofrecuencia corporal</h2>
+							<p>
+							  Este tratamiento consiste en la aplicación de ondas electromagnéticas 
+							  de alta frecuencia sobre la piel, provocando un calentamiento controlado 
+							  de las diferentes capas de la dermis. Este proceso estimula la formación 
+							  de nuevo colágeno, mejorando notablemente el aspecto de la piel. Sus 
+							  beneficios incluyen la eliminación de celulitis y flacidez, la mejora de 
+							  la circulación en la zona tratada y la eliminación de toxinas acumuladas, 
+							  dejando la piel más tersa, luminosa y visiblemente rejuvenecida.
+							</p>
+							<div class="text-center">
+							  <a href="https://wa.me/51906631139?text=Hola%2C%20quiero%20saber%20más%20sobre%20el%20tratamiento%20de%20radiofrecuencia%20corporal." target="_blank" rel="noopener noreferrer" class="btn-wsp">Consulta aquí</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					  
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+						<div class="fh5co-project-item">
+						  <img src="images/celulitis.png" alt="Pack anticelulítico con ultrasonido, ondas rusas y carboxiterapia" class="img-responsive">
+						  <div class="fh5co-text">
+							<h2 class="text-center">Pack Anticelulítico</h2>
+							<p>
+							  Nuestro tratamiento es altamente efectivo para reducir celulitis,
+							  tonificar la piel y mejorar su apariencia desde las primeras sesiones. Utilizamos ultrasonido de 
+							  baja frecuencia para romper células grasas de manera selectiva, 
+							  Ondas Rusas que mejoran la circulación y estimulan la producción 
+							  de colágeno, y carboxiterapia, un método innovador que elimina 
+							  grasa localizada y oxigena las células. Este enfoque integral no
+							  invasivo ayuda a combatir la piel de naranja, dejando una piel 
+							  más firme, tonificada y saludable.
+							</p>
+							<div class="text-center">
+							  <a href="https://wa.me/51906631139?text=Hola%2C%20me%20interesa%20el%20Pack%20Anticelulítico.%20¿Podrían%20contarme%20más%3F" target="_blank" rel="noopener noreferrer" class="btn-wsp">Consulta aquí</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					  
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+						<div class="fh5co-project-item">
+						  <img src="images/drenajelinfatico.png" alt="Masaje de drenaje linfático con técnica brasilera en piernas" class="img-responsive">
+						  <div class="fh5co-text">
+							<h2 class="text-center">Drenaje linfático técnica brasilera</h2>
+							<p>
+							  La técnica de drenaje linfático brasileño es un masaje terapéutico diseñado 
+							  para estimular el sistema linfático, mejorando el flujo de la linfa, que 
+							  transporta nutrientes, desechos y toxinas por el cuerpo. Sus beneficios 
+							  incluyen la reducción de la retención de líquidos y la hinchazón, mejora 
+							  la circulación sanguínea y linfática, y fortalece el sistema inmunológico. 
+							  También alivia el dolor y la inflamación, mejora la apariencia de la piel 
+							  al reducir la celulitis y la piel de naranja, y favorece la relajación y 
+							  el bienestar general.
+							</p>
+							<div class="text-center">
+							  <a href="https://wa.me/51906631139?text=Hola%2C%20quisiera%20más%20información%20sobre%20el%20drenaje%20linfático%20con%20técnica%20brasilera." target="_blank" rel="noopener noreferrer" class="btn-wsp">Consulta aquí</a>
+							</div>
+						  </div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section id="fh5co-projects">
-			<div class="container">
-			  <div class="row ">
-				<div class="col-md-12 text-center">
-			
-			<div class="row">
-	<div id="fastreduction" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-		<a href="corporales.html#fastreduction" class="fh5co-project-item ">
-							<img src="images/fastreduction.png" alt="Image" class="img-responsive">
-							<div class="fh5co-text">
-								<h2 class="text-center">Fast reduction</h2>
-								<p>es un tratamiento no invasivo ideal para eliminar la grasa 
-									localizada mediante la cavitación, que utiliza ultrasonidos de baja frecuencia 
-									para disolver las células adiposas. También incluye las Ondas Rusas, 
-									que tonifican los músculos mediante electroestimulación, y la carboxiterapia, 
-									que oxigena las células con infiltraciones de dióxido de carbono.
-									 Estos procedimientos ayudan a reducir volumen, disminuir la celulitis,
-									  mejorar la firmeza y elasticidad de la piel, logrando resultados visibles y duraderos.</p>
-							</div>
-						</a>
-					</div>
-					
-					<div id="Hidrolipo" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="corporales.html#Hidrolipo" class="fh5co-project-item ">
-							<img src="images/hidro.png" alt="Image" class="img-responsive">
-							<div class="fh5co-text">
-								<h2 class="text-center">Hidrolipo</h2>
-								<p> Consta de dos fases: primero,
-									se realiza la infiltración del suero en la zona a 
-									tratar, provocando una reacción del tejido adiposo. 
-									Luego, aplicamos ultrasonidos de baja frecuencia para romper las células grasas
-									 sin dañar los tejidos circundantes. La sesión dura 
-									 aproximadamente 60 minutos por zona, y la cantidad 
-									 de sesiones se determina según el área a tratar. Los resultados incluyen 
-									 la reducción de grasa localizada, abdomen y flancos, 
-									 además de mejorar el aspecto de la piel combatiendo la celulitis.
-							</div>
-						</a>
-					</div>
+		  </div>
+		</div>
+	  </section>
 
-					<div id="Glúteos tonificados" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="corporales.html#Glúteos tonificados" class="fh5co-project-item ">
-							<img src="images/gluteos tonificados.png" alt="Image" class="img-responsive">
-							<div class="fh5co-text">
-								<h2 class="text-center">Glúteos tonificados</h2>
-								<p>Este tratamiento utiliza la electroestimulación para contraer 
-									los músculos, logrando modelar la figura a través de la tonificación muscular 
-									y combatiendo eficazmente la flacidez. Sus beneficios incluyen potenciar la
-									 musculatura para que la piel luzca más firme, mejorar la hipertrofia muscular
-									  y facilitar la reducción de centímetros al disminuir la adiposidad. Además,
-									   favorece la circulación estimulando el retorno venoso y linfático, eliminando 
-									   líquidos retenidos y mejorando la apariencia de la celulitis.</p>
-							</div>
-						</a>
-					</div>
-
-					<div id="Radiofrecuencia corporal" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="corporales.html#Radiofrecuencia corporal" class="fh5co-project-item ">
-							<img src="images/radiofrecuencia.png" alt="Image" class="img-responsive">
-							<div class="fh5co-text">
-								<h2 class="text-center">Radiofrecuencia corporal</h2>
-								<p>Este tratamiento consiste en la aplicación de ondas electromagnéticas 
-									de alta frecuencia sobre la piel, provocando un calentamiento controlado 
-									de las diferentes capas de la dermis. Este proceso estimula la formación 
-									de nuevo colágeno, mejorando notablemente el aspecto de la piel. Sus 
-									beneficios incluyen la eliminación de celulitis y flacidez, la mejora de 
-									la circulación en la zona tratada y la eliminación de toxinas acumuladas, 
-									dejando la piel más tersa, luminosa y visiblemente rejuvenecida.</p>
-							</div>
-						</a>
-					</div>
-					<div id="Pack Anticelulítico" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="corporales.html#Pack Anticelulítico" class="fh5co-project-item ">
-							<img src="images/celulitis.png" alt="Image" class="img-responsive">
-							<div class="fh5co-text">
-								<h2 class="text-center">Pack Anticelulítico</h2>
-								<p>Nuestro tratamiento es altamente efectivo  para reducir celulitis,
-									tonificar la piel y mejorar su 
-								   apariencia desde las primeras sesiones. Utilizamos ultrasonido de 
-								   baja frecuencia para romper células grasas de manera selectiva, 
-								   Ondas Rusas que mejoran la circulación y estimulan la producción 
-								   de colágeno, y carboxiterapia, un método innovador que elimina 
-								   grasa localizada y oxigena las células. Este enfoque integral no
-								   invasivo ayuda a combatir la piel de naranja, dejando una piel 
-								   más firme, tonificada y saludable.
-							</div>
-						</a>
-					</div>
-
-					
-
-					<div id="Drenaje linfático técnica brasilera" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="corporales.html#Drenaje linfático técnica brasilera" class="fh5co-project-item ">
-							<img src="images/drenajelinfatico.png" alt="Image" class="img-responsive">
-							<div class="fh5co-text">
-								<h2 class="text-center">Drenaje linfático técnica brasilera</h2>
-								<p>La técnica de drenaje linfático brasileño es un masaje terapéutico diseñado 
-									para estimular el sistema linfático, mejorando el flujo de la linfa, que 
-									transporta nutrientes, desechos y toxinas por el cuerpo. Sus beneficios 
-									incluyen la reducción de la retención de líquidos y la hinchazón, mejora 
-									la circulación sanguínea y linfática, y fortalece el sistema inmunológico. 
-									También alivia el dolor y la inflamación, mejora la apariencia de la piel 
-									al reducir la celulitis y la piel de naranja, y favorece la relajación y 
-									el bienestar general.</p>
-							</div>
-						</a>
-					</div>
-					
-					
-				</div>
+	  <section id="fh5co-features">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+			  <h2 class="fh5co-lead animate-box text-center">¿Sabías que...?</h2>
+				<p class="fh5co-sub-lead animate-box text-justify">El drenaje linfático postoperatorio no solo acelera
+					la recuperación tras una cirugía, sino que también ayuda a reducir el riesgo de fibrosis y a
+					mejorar el sistema inmunológico.</p>
+				<p class="fh5co-sub-lead animate-box text-justify">Los tratamientos reductivos no invasivos como la cavitación y la radiofrecuencia, ofrecen
+					resultados visibles en pocas sesiones sin necesidad de tiempo de recuperación.</p>
+				<p class="fh5co-sub-lead animate-box text-justify">La carboxiterapia, utilizada en muchos de nuestros tratamientos, estimula la producción de 
+					colágeno y mejora la oxigenación celular, dejando tu piel más firme y saludable.</p>
+				<p class="fh5co-sub-lead animate-box text-justify">La electroestimulación no solo tonifica los músculos, sino que también mejora la circulación 
+					y ayuda a eliminar líquidos retenidos, combatiendo la celulitis.</p>
+				<p class="fh5co-sub-lead animate-box text-justify">¡Mejorar tu bienestar y estética es posible con alternativas seguras y eficaces adaptadas a 
+					tus necesidades específicas!</p>
 			</div>
-		</section>
-		<section id="fh5co-features">
-			<div class="container">
-			  <div class="row ">
-				<div class="col-md-12 text-center">
-				  <h2 class="fh5co-lead animate-box text-center"  >¿Sabías que...?</h2>
-						<p class="fh5co-sub-lead animate-box text-justify">El drenaje linfático postoperatorio no solo acelera
-							 la recuperación tras una cirugía, sino que también ayuda a reducir el riesgo de fibrosis y a
-							  mejorar el sistema inmunológico. </p>
-							  <p class="fh5co-sub-lead animate-box text-justify">Los tratamientos reductivos no invasivos como la cavitación y la radiofrecuencia, ofrecen
-							 resultados visibles en pocas sesiones sin necesidad de tiempo de recuperación. </p>
-							 <p class="fh5co-sub-lead animate-box text-justify">La carboxiterapia, utilizada en muchos de nuestros tratamientos, estimula la producción de 
-							colágeno y mejora la oxigenación celular, dejando tu piel más firme y saludable.</p>
-							<p class="fh5co-sub-lead animate-box text-justify">La electroestimulación no solo tonifica los músculos, sino que también mejora la circulación 
-							y ayuda a eliminar líquidos retenidos, combatiendo la celulitis.</p>
-							<p class="fh5co-sub-lead animate-box text-justify">¡Mejorar tu bienestar y estética es posible con alternativas seguras y eficaces adaptadas a 
-							tus necesidades específicas!</p>
-								</div>
-							</div>
-						  </section>
+		  </div>
+		</div>
+	  </section>
 		
-
-		<!-- END #fh5co-features -->
-			
-		<section id="fh5co-subscribe">
-			<div class="container">
+	 	
+	
 		
-				<h3 class="animate-box"><label for="email">Subscribete a nuestro boletin</label></h3>
-				<form action="#" method="post" class="animate-box">
-					<i class="fh5co-icon icon-paper-plane"></i>
-					<input type="email" class="form-control" placeholder="Ingresa tu correo" id="email" name="email">
-					<input type="submit" value="Enviar" class="btn btn-primary">
-				</form>
-
-			</div>
-		</section>
-		<!-- END #fh5co-subscribe -->
-
-		<footer id="fh5co-footer">
-			<div class="container">
-				<div class="row ">
-					<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
-						<div class="fh5co-footer-widget">
-							<h3> <a href="https://maps.app.goo.gl/USLxK7Tc382ddPm49">Ubicanos</a></h3>
-							<ul class="fh5co-links">
-								<li><a href="https://maps.app.goo.gl/USLxK7Tc382ddPm49">Av alfredo benavides 264 <p> Miraflores, Lima, Perú</p></a></li>
-								
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
-						<div class="fh5co-footer-widget">
-							
-						</div>
-					</div>
-
 					
+	  <div class="whatsapp-bubble animate-box">
+		<a href="https://wa.me/51906631139" target="_blank" rel="noopener noreferrer">
+			<img src="images/whatsapp (1).png" alt="WhatsApp">
+		</a>
+		<a href="https://www.instagram.com/marieticsalud" target="_blank" rel="noopener noreferrer">
+		  <img src="images/social.png" alt="Instagram">
+		</a>
+		<a href="https://www.tiktok.com/@marieticsalud" target="_blank" rel="noopener noreferrer">
+		  <img src="images/tik-tok.png" alt="TikTok">
+		</a>
+		  <a href="https://www.facebook.com/share/1ASKZchiaf/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+			<img src="images/facebook.png" alt="Facebook">
+		</a>
+	  </div>
+	  
 
-					<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
-						<div class="fh5co-footer-widget">
-							<h3>Síguenos</h3>
-							<ul class="fh5co-social">
-								<li><a href="https://www.facebook.com/share/1ASKZchiaf/?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="https://www.instagram.com/marietic_saludestetica/profilecard/?igsh=MTgxbGJwcDh0bHE5eg==" target="_blank"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="https://www.tiktok.com/@marietic.salud.es?_t=8rmThNm4JZn&_r=1" target="_blank" ><i class="fab fa-tiktok"></i></a></li> <!-- Ícono de TikTok -->
-							</ul>
-						</div>
-					</div>
-					
-					<div class="whatsapp-bubble ">
-						<a href="https://www.facebook.com/share/1ASKZchiaf/?mibextid=LQQJ4d" target="_blank">
-							<img src="images/facebook.png" alt="WhatsApp">
-						</a>
-						<a href="https://www.instagram.com/marietic_saludestetica/profilecard/?igsh=MTgxbGJwcDh0bHE5eg==" target="_blank">
-							<img src="images/social.png" alt="WhatsApp">
-						</a>
-						<a href="https://www.tiktok.com/@marietic.salud.es?_t=8rmThNm4JZn&_r=1" target="_blank">
-							<img src="images/tik-tok.png" alt="WhatsApp">
-
-							<a href="https://wa.me/51906631139" target="_blank">
-								<img src="images/whatsapp (1).png" alt="WhatsApp">
-						</a>
-					</div>
-				
-			</div>
-			<div class="fh5co-copyright animate-box">
-				<div class="container">
+	  <section id="fh5co-features" style="background-color: #f7f7f7;">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12">
+					<h2 class="fh5co-lead animate-box">Nuestra ubicación</h2>
 					<div class="row">
-						<div class="col-md-12">
-							<p class="fh5co-left"><small>&copy; 2024 <a href="index.html">Todos los derechos reservados.</small></p></a>
-							<p class="fh5co-right"> Web design <a href="">kevyn.web@gmail.com</p>
+						<!-- Map column -->
+						<div class="col-md-6 animate-box">
+							<!-- Fixed map container with explicit height -->
+							<div id="map" style="height: 300px; width: 100%; margin-bottom: 20px;"></div>
+						</div>
+						
+						<!-- Contact info column -->
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-feature">
+								<h3>Visítanos</h3>
+								<p>
+									<strong>Dirección:</strong> Av. Alfredo Benavides 264, Miraflores, Lima<br>
+									<strong>Horario:</strong> Lunes a Viernes: 09:00 - 20:00<br>
+									Sábados: 09:00 - 20:00<br>
+									<strong>Whatsapp:</strong> <a href="https://wa.me/51906631139?text=Hola%20👋%2C%20vi%20la%20p%C3%A1gina%20web%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%3A" target="_blank" rel="noopener noreferrer">+51 906 631 139</a><br>
+									<strong>Email:</strong> <a href="mailto:info@marietic.com" target="_blank" rel="noopener noreferrer">info@marietic.com</a>
+								</p>
+								<a href="https://maps.app.goo.gl/WyHfDsyRaBGDxhFM6" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Cómo llegar</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			</footer>
-			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-			<!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-
+		</div>
+	</section>
 	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-
-	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
-	<script src="js/jquery.style.switcher.js"></script>
+	<!-- Script section moved outside of HTML structure -->
 	<script>
-		$(function(){
-			$('#colour-variations ul').styleSwitcher({
-				defaultThemeId: 'theme-switch',
-				hasPreview: false,
-				cookie: {
-		          	expires: 30,
-		          	isManagingLoad: true
-		      	}
-			});	
-			$('.option-toggle').click(function() {
-				$('#colour-variations').toggleClass('sleep');
-			});
-		});
-	</script>
-	<!-- End demo purposes only -->
-
-	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
-
-	<!-- 
-	INFO:
-	jQuery Cookie for Demo Purposes Only. 
-	The code below is to toggle the layout to boxed or wide 
-	-->
-	<script src="js/jquery.cookie.js"></script>
-	<script>
-		$(function(){
-
-			if ( $.cookie('layoutCookie') != '' ) {
-				$('body').addClass($.cookie('layoutCookie'));
-			}
-
-			$('a[data-layout="boxed"]').click(function(event){
-				event.preventDefault();
-				$.cookie('layoutCookie', 'boxed', { expires: 7, path: '/'});
-				$('body').addClass($.cookie('layoutCookie')); // the value is boxed.
-			});
-
-			$('a[data-layout="wide"]').click(function(event){
-				event.preventDefault();
-				$('body').removeClass($.cookie('layoutCookie')); // the value is boxed.
-				$.removeCookie('layoutCookie', { path: '/' }); // remove the value of our cookie 'layoutCookie'
-			});
+		document.addEventListener('DOMContentLoaded', function() {
+			// Initialize map only when DOM is fully loaded
+			var map = L.map('map').setView([-12.1245504, -77.0309146], 16);
+			
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			}).addTo(map);
+			
+			var marker = L.marker([-12.1245504, -77.0309146]).addTo(map);
+			marker.bindPopup("<b>Marietic - Lifting de Pestañas</b><br><a href='https://maps.app.goo.gl/WyHfDsyRaBGDxhFM6' target='_blank' rel='noopener noreferrer'>Ver en Google Maps</a>").openPopup();
 		});
 	</script>
 	
+	
+	
+	<!-- Footer -->
+	<footer id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>&copy; 2025 Marietic Salud & Estética. Todos los derechos reservados. <span>Diseñado <i class="icon-heart"></i> por <a href="mailto:kevyn.web@gmail.com?subject=Consulta%20sobre%20diseño%20web&body=Hola%2C%20me%20interesa%20saber%20más%20sobre%20tus%20servicios." target="_blank" rel="noopener noreferrer">kevyn.web</a></span></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <!-- END #fh5co-page -->
 
-	</body>
+    <!-- Script section colocado al final para no bloquear la renderización -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+		document.addEventListener('DOMContentLoaded', function() {
+			// Initialize map only when DOM is fully loaded
+			var map = L.map('map').setView([-12.1245504, -77.0309146], 16);
+			
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			}).addTo(map);
+			
+			var marker = L.marker([-12.1245504, -77.0309146]).addTo(map);
+		marker.bindPopup("<b>Marietic</b><br><a href='https://maps.app.goo.gl/WyHfDsyRaBGDxhFM6' target='_blank' rel='noopener noreferrer'>Ver en Google Maps</a>").openPopup();
+		});
+    </script>
+    
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    
+    <!-- Main JS (Do not remove) -->
+    <script src="js/main.js"></script>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+</body>
 </html>

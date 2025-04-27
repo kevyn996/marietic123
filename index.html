@@ -1,55 +1,111 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--> 
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--> 
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--> 
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--> 
+<head> 
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Marietic Salud & Estética</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+	<!-- SEO Básico --> 
+	<meta name="description" content="Limpiezas faciales, drenaje linfático postoperatorio, vitaminas, reducción de medidas, micropigmentación y más en Marietic Miraflores. Atención personalizada para tu belleza y bienestar."> 
+	<meta name="keywords" content="limpieza facial, drenaje linfático, vitaminas endovenosas, reducción de medidas, estética corporal, micropigmentación, Marietic, estética en Miraflores"> 
+	<meta name="author" content="Marietic">
+    
+    <!-- Robots meta tag -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
+    <!-- URL Canónica -->
+    <link rel="canonical" href="https://marietic.com/" />
 
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Marietic Salud & Estética</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Centro de salud y estética especializado en tratamientos personalizados para realzar tu belleza y bienestar. " />
-	<meta name="keywords" content="Tu bienestar es nuestra prioridad" />
-	<meta name="author" content="kevyn.web" />
-
- 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
+    <!-- Cargar el archivo de Leaflet (librería para OpenStreetMap) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Bootstrap  -->
+	<!-- Preconnect para recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+	
+    <!-- Facebook Open Graph --> 
+    <meta property="og:title" content="Marietic Salud & Estética" /> 
+    <meta property="og:description" content="Tratamientos estéticos personalizados en Miraflores: limpieza facial, plasma, vitaminas, reducción corporal y más." /> 
+    <meta property="og:image" content="https://marietic.com/images/logo-marietic.svg" /> 
+    <meta property="og:image:width" content="500" /> 
+    <meta property="og:image:height" content="500" /> 
+    <meta property="og:url" content="https://marietic.com" /> 
+    <meta property="og:site_name" content="Marietic" />
+
+    <!-- Twitter Cards --> 
+    <meta name="twitter:title" content="Marietic Salud & Estética" /> 
+    <meta name="twitter:description" content="Especialistas en salud y belleza en Miraflores. Agenda tu cita hoy." /> 
+    <meta name="twitter:image" content="https://marietic.com/images/espacio.jpg" /> 
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Schema.org para el logo y datos de la organización -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Marietic Salud & Estética",
+      "url": "https://marietic.com",
+      "logo": "https://marietic.com/images/logo-marietic.svg",
+      "image": "https://marietic.com/images/espacio.jpg",
+      "description": "Tratamientos estéticos personalizados en Miraflores: limpieza facial, plasma, vitaminas, reducción corporal y más.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Alfredo Benavides 264",
+        "addressLocality": "Miraflores",
+        "addressRegion": "Lima",
+        "addressCountry": "PE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -12.1245504,
+        "longitude": -77.0309146
+      },
+      "telephone": "+51906631139",
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.facebook.com/share/1ASKZchiaf",
+        "https://www.instagram.com/marieticsalud",
+        "https://www.tiktok.com/@marieticsalud"
+      ]
+    }
+    </script>
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory --> 
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'> 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> 
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> 
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
+	<link rel="manifest" href="/site.webmanifest"> 
+	 
+	<!-- Animate.css --> 
+	<link rel="stylesheet" href="css/animate.css"> 
+	<!-- Flexslider --> 
+	<link rel="stylesheet" href="css/flexslider.css"> 
+	<!-- Icomoon Icon Fonts--> 
+	<link rel="stylesheet" href="css/icomoon.css"> 
+	<!-- Magnific Popup --> 
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	<!-- Bootstrap  --> 
 	<link rel="stylesheet" href="css/bootstrap.css">
 
 	<link rel="stylesheet" href="css/style.css">
 
-
 	<link rel="stylesheet" id="theme-switch" href="css/style.css">
 	
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	
+
+</head>
 	<body>
 	
 	<!-- Loader -->
@@ -66,22 +122,29 @@
 					  Nuestros Tratamientos <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" role="menu">
+					  <li><a href="blog.html">Blog</a></li>
+					  <li><a href="faciales.html">Faciales</a></li>
 					  <li><a href="vitaminas.html">Vitaminas</a></li>
 					  <li><a href="corporales.html">Corporales</a></li>
-					  <li><a href="faciales.html">Faciales</a></li>
-					  <li><a href="otros.html">Micropigmentación</a></li>
+					  <li><a href="micropigmentacion.html">Micropigmentación</a></li>
+					  <li><a href="drenajelinfatico.html">Masajes Post-operatorios</a></li>
+					  <li><a href="avances.html">Nuestros últimos avances </a></li>
 					</ul>
 				  </li>
 				</ul>
 			</ul>
-			<h1 class="animate-box" id="fh5co-logo"><a href="index.html">Marietic<span></span></a></h1>
-			<ul class="pull-right right-menu">
-			  <li class="fh5co-cta-btn"><a href="https://drive.google.com/file/d/1LA3oS972cHAzobTQKTsTZ5jnyMg1ya-r/view?usp=sharing"
-				 target="_blank">Catalago vitaminas</a></li>
-			  <li class="fh5co-cta-btn"><a href="https://drive.google.com/file/d/1jexJYbF02JfFYx0u8P6R5GyQfpVoiMyY/view?usp=sharing"
-				 target="_blank">Catalago corporales</a></li>
-			</ul>
-		  </nav>
+			<h1 class="animate-box" id="fh5co-logo">
+				<a href="index.html">Marietic</a>
+			  </h1>
+			  <ul class="pull-right right-menu">
+				<li class="fh5co-cta-btn">
+					<a href="pdf/Catalago vitaminas Marietic.pdf" download="Catalogo_Vitaminas_Marietic.pdf" rel="noopener noreferrer">Catálogo Vitaminas</a>
+				</li>
+				<li class="fh5co-cta-btn">
+				  <a href="pdf/Catalago estético Marietic.pdf" download="Catalogo_Corporales_Marietic.pdf" rel="noopener noreferrer">Catálogo Corporales</a>
+				</li>
+			  </ul>
+			</nav>
 		</div>
 	  </section>
 
@@ -133,86 +196,134 @@
 	  <div class="container">
 		<div class="row ">
 		  <div class="col-md-12 text-center">
-	  <h2 class="fh5co-lead  text-center"  >Sevicios destacados</h2>
+	  <h2 class="fh5co-lead  text-center"  >Nuestros Servicios</h2>
 	  <div class="row">
 		
 		<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-		  <a href="vitaminas.html#cocktailantiage" target="_blank" class="fh5co-project-item ">
-			<img src="images/antiage.jpg" alt="Image" class="img-responsive">
-			<div class="fh5co-text">
-			  <h2 class="text-center">Cocktail Antiage</h2>
-			  <p>Cóctel revitalizante con vitamina C, glutatión, 
-				ácido alfa lipoico, coenzima Q10 y biotina, que fortalece el sistema inmunológico, 
-				mejora la piel y promueve la salud cardiovascular, capilar y de uñas.
+			<div class="fh5co-project-item">
+			  <img src="images/hidratacionfacial.png" alt="Image" class="img-responsive">
+			  <div class="fh5co-text">
+				<h2 class="text-center">Tratamientos Faciales</h2>
+				<p>
+				  Limpieza facial express <br>
+				  Limpieza facial profunda <br>
+				  Limpieza mas foroterapia <br>
+				  Limpieza facial con dermapen <br>	
+				  Plasma rico en plaquetas Facial <br>	
+				  Equipo de Radiofrecuencia facial <br>
+				</p>
+				<div class="text-center">
+				  <a href="faciales.html" target="_blank"  rel="noopener noreferrer" class="btn-wsp">Ver más </a>
+				</div>
+			  </div>
 			</div>
-		  </a>
+		  </div>
+		  
+		  
+
+		<!-- Pack Inmunodefensa -->
+<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+	<div class="fh5co-project-item">
+	  <img src="images/inmunodefensa.jpg" alt="Pack Inmunodefensa" class="img-responsive">
+	  <div class="fh5co-text">
+		<h2 class="text-center">Vitaminas Endovenosas</h2>
+
+		<p>
+			Vitamina C <br>
+			Vitamina B12<br>
+			Cocktail Antiage <br>
+			Cocktail Antioxidante <br>
+			Cocktail Inmunodefensa <br>
+			Cocktail de Suplementos Naturales <br>	
+  
+		  </p>
+		
+		<div class="text-center">
+		  <a href="vitaminas.html" target="_blank"  rel="noopener noreferrer" class="btn-wsp">Ver más </a>
 		</div>
-
-		<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-		  <a href="vitaminas.html#cocktail-inmunodefensa" target="_blank" class="fh5co-project-item ">
-			<img src="images/inmunodefensa.jpg" alt="Image" class="img-responsive">
-			<div class="fh5co-text">
-			  <h2 class=" text-center">Pack Inmunodefensa</h2>
-			  <p>Combina 4 componentes esenciales
-				que trabajan sinérgicamente para fortalecer
-				tu sistema inmunológico y mejorar tu salud. <p></p>Vitamina C.
-				Pasconal Forte.
-				Lymphdiaral. 
-				Cholo 2 
-			</div>
-		  </a>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Limpieza facial con dermapen y prp -->
+  <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+	<div class="fh5co-project-item">
+	  <img src="images/celulitis.png" alt="Limpieza facial con dermapen y prp" class="img-responsive">
+	  <div class="fh5co-text">
+		<h2 class="text-center">Tratamientos Corporales</h2>
+		<p>
+			Hidrolipo <br>
+			Fast reduction <br>
+			Pack Anticelulítico <br>
+			Glúteos tonificados<br>
+			Radiofrecuencia corporal <br>	
+			Drenaje linfático técnica brasilera <br>
+		  </p>
+		<div class="text-center">
+			<a href="corporales.html" target="_blank"  rel="noopener noreferrer" class="btn-wsp">Ver más </a>
 		</div>
-
-		<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-		  <a href="faciales.html#limpiezafacialcondermapen" target="_blank" class="fh5co-project-item ">
-			<img src="images/limpiezafacial con prp.png" alt="Image" class="img-responsive">
-			<div class="fh5co-text">
-			  <h2 class="text-center">Limpieza facial con dermapen y prp</h2>
-			  <p>Tratamiento con microagujas que estimula la regeneración de
-				 colágeno y elastina, mejorando la calidad de la piel. Combate arrugas, previene flacidez,
-				  atenúa cicatrices, reduce poros y deja la piel hidratada.</p>
-			</div>
-		  </a>
-		</div>
-
-		<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-            <a href="faciales.html#plasmaricoenplaquetas" target="_blank" class="fh5co-project-item ">
-              <img src="images/PLASMA RICO EN plaquetas facial.png" alt="Image" class="img-responsive">
-              <div class="fh5co-text">
-                <h2 class="text-center">Plasma rico en plaquetas</h2>
-                <p>El tratamiento con plasma rico en plaquetas estimula la regeneración celular, mejorando la firmeza, 
-                  luminosidad y tersura de la piel. Reduce líneas de expresión, manchas y retrasa el envejecimiento, 
-                  promoviendo una piel más joven y saludable.</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-            <a href="corporales.html#fastreduction" target="_blank" class="fh5co-project-item ">
-              <img src="images/fastreduction.png" alt="Image" class="img-responsive">
-              <div class="fh5co-text">
-                <h2 class="text-center">Fast reduction</h2>
-                <p>Este tratamiento combina cavitación, ondas rusas y carboxiterapia: la cavitación elimina grasa localizada 
-                  con ultrasonidos, las ondas rusas tonifican y refuerzan la piel mediante electroestimulación, y 
-                  la carboxiterapia mejora la circulación y oxigenación celular.</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-            <a href="corporales.html#drenajelinfatico" target="_blank" class="fh5co-project-item ">
-              <img src="images/masajedrenajelinfaticocorporral.jpg" alt="Image" class="img-responsive">
-              <div class="fh5co-text">
-                <h2 class="text-center">Masajes de drenaje linfatico post operatorio</h2>
-                <p>El drenaje linfático es un masaje terapéutico que utiliza maniobras suaves y precisas para estimular el sistema linfático,
-                  Este tratamiento mejora la circulación y alivia la inflamación, promoviendo un bienestar general.</p>
-              </div>
-            </a>
-          </div>
-          
-          
-        </div>
-      </div>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Plasma rico en plaquetas -->
+  <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+	<div class="fh5co-project-item">
+	  <img src="images/1232123.jpg" alt="Plasma rico en plaquetas" class="img-responsive">
+	  <div class="fh5co-text">
+		<h2 class="text-center">Micropigmentación</h2>
+		<p>
+			Microblading <br>
+			Microshading <br>
+			Lifting de pestañas <br>
+			Planchado de cejas <br>	
+			Hidratacion de labios<br>
+			Micropigmentación de labios<br>
+				
+		  </p>
+		<div class="text-center">
+			<a href="micropigmentacion.html" target="_blank"  rel="noopener noreferrer" class="btn-wsp">Ver más </a></div>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Fast reduction -->
+  <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+	<div class="fh5co-project-item">
+	  <img src="images/masajedrenajelinfaticocorporral.jpg" alt="Fast reduction" class="img-responsive">
+	  <div class="fh5co-text">
+		<h2 class="text-center">Masajes Post-Operatorios</h2>
+		<p>
+			Masajes de drenaje linfático post operatorio facial <br>
+			Masajes de drenaje linfático post operatorio corporal <br>	
+  
+		  </p>
+		<div class="text-center">
+			<a href="drenajelinfatito.html" target="_blank"  rel="noopener noreferrer" class="btn-wsp">Ver más </a></div>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Masajes de drenaje linfatico post operatorio -->
+  <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+	<div class="fh5co-project-item">
+	  <img src="images/masajedrenajelinfaticocorporral.jpg" alt="Masajes de drenaje linfatico post operatorio" class="img-responsive">
+	  <div class="fh5co-text">
+		<h2 class="text-center">Últimos Tratamientos</h2>
+		<p>
+			Neoderma <br>
+			Hydraboost <br>	
+			NCTF facial <br>
+			Enzimas reductoras <br>	
+			Radiofrecuencia facial <br>
+  
+		  </p>
+		<div class="text-center">
+			<a href="avances.html" target="_blank"  rel="noopener noreferrer" class="btn-wsp">Ver más </a></div>
+		
+	  </div>
+	</div>
+  </div>
     </section>
 		<!-- END #fh5co-projects -->
 
@@ -221,28 +332,28 @@
 				<div class="row text-center ">
 					<div class="col-md-12 ">
 						
-						<h2 class="fh5co-lead animate-box text-center">Misión</h2>
-						<p class="fh5co-sub-lead  text-justify">Brindar bienestar integral a
+						<h2 class="fh5co-lead  text-center">Misión</h2>
+						<p class="fh5co-sub-lead  ">Brindar bienestar integral a
 							 través de tratamientos estéticos y de salud preventiva que combinen innovación, 
 							 profesionalismo y honestidad. Nuestro compromiso es ofrecer soluciones personalizadas
 							  que realcen la belleza y promuevan el equilibrio físico y emocional, asegurando 
 							  siempre la confianza y satisfacción de nuestros pacientes. <p>
-							 <h2 class="fh5co-lead animate-box text">Visión</h2>
-							 <p class="fh5co-sub-lead  text-justify">Ser reconocidos como el centro 
+							 <h2 class="fh5co-lead  text">Visión</h2>
+							 <p class="fh5co-sub-lead  ">Ser reconocidos como el centro 
 								líder en estética y bienestar en la región, destacándonos por ofrecer soluciones 
 								integrales, tecnología avanzada y un enfoque humanizado que inspire confianza y 
 								satisfacción en nuestros pacientes. <p>
-									<h2 class="fh5co-lead animate-box text">Valores</h2>
-									<p class="fh5co-sub-lead  text-justify">Profesionalismo: Nuestro equipo está conformado 
+									<h2 class="fh5co-lead  text">Valores</h2>
+									<p class="fh5co-sub-lead  ">Profesionalismo: Nuestro equipo está conformado 
 										por especialistas altamente capacitados, comprometidos con brindar el mejor servicio. <p>
-											<p class="fh5co-sub-lead  text-justify">Cercanía: Valoramos las relaciones 
+											<p class="fh5co-sub-lead  ">Cercanía: Valoramos las relaciones 
 												humanas y trabajamos para generar confianza y satisfacción en cada paciente. <p>
-									<p class="fh5co-sub-lead  text-justify">Honestidad: Garantizamos transparencia en cada 
+									<p class="fh5co-sub-lead  ">Honestidad: Garantizamos transparencia en cada 
 										tratamiento, ofreciendo información clara y resultados reales. <p>
 									
-									<p class="fh5co-sub-lead text-justify">Nos aseguramos de cumplir con los más 
+									<p class="fh5co-sub-lead ">Nos aseguramos de cumplir con los más 
 										altos estándares de calidad y cuidado en cada procedimiento. <p>
-									<p class="fh5co-sub-lead  text-justify">Incorporamos técnicas avanzadas y 
+									<p class="fh5co-sub-lead  ">Incorporamos técnicas avanzadas y 
 										tecnología de vanguardia para garantizar tratamientos efectivos.<p>
 								
 							</div>
@@ -257,78 +368,84 @@
 
 		<!-- END #fh5co-features -->
 			
-		<section id="fh5co-subscribe">
-			<div class="container">
-				<h3 class="x"><label for="email">Suscríbete a nuestro boletín</label></h3>
-				<form name="contact" data-netlify="true">
-					<i class="fh5co-icon icon-paper-plane"></i>
-					<input type="email" class="form-control" placeholder="Ingresa tu correo" id="email" name="email" required>
-					<input type="submit" value="Enviar" class="btn btn-primary">
-				</form>
-			</div>
-		</section>
+	
 		
-		<!-- END #fh5co-subscribe -->
-
-		<footer id="fh5co-footer">
-			<div class="container">
-				<div class="row ">
-					<div class="col-md-3 col-sm-6 col-xs-12 ">
-						<div class="fh5co-footer-widget">
-							<h3> <a href="https://maps.app.goo.gl/USLxK7Tc382ddPm49">Ubicanos</a></h3>
-							<ul class="fh5co-links">
-								<li><a href="https://maps.app.goo.gl/USLxK7Tc382ddPm49">Av alfredo benavides 264 <p> Miraflores, Lima, Perú</p></a></li>
-								
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-md-3 col-sm-6 col-xs-12 ">
-						<div class="fh5co-footer-widget">
-							
-						</div>
-					</div>
-
 					
-
-					<div class="col-md-3 col-sm-6 col-xs-12 ">
-						<div class="fh5co-footer-widget">
-							<h3>Síguenos</h3>
-							<ul class="fh5co-social">
-								<li><a href="https://www.facebook.com/share/1ASKZchiaf/?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="https://www.instagram.com/marietic_saludestetica/profilecard/?igsh=MTgxbGJwcDh0bHE5eg==" target="_blank"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="https://www.tiktok.com/@marietic.salud.es?_t=8rmThNm4JZn&_r=1" target="_blank" ><i class="fab fa-tiktok"></i></a></li> <!-- Ícono de TikTok -->
-							</ul>
-						</div>
-					</div>
-					
-					<div class="whatsapp-bubble animate-box ">
-						<a href="https://www.facebook.com/share/1ASKZchiaf/?mibextid=LQQJ4d" target="_blank">
-							<img src="images/facebook.png" alt="WhatsApp">
+					<div class="whatsapp-bubble animate-box">
+						<a href="https://wa.me/51906631139" target="_blank" rel="noopener noreferrer">
+							<img src="images/whatsapp (1).png" alt="WhatsApp">
 						</a>
-						<a href="https://www.instagram.com/marietic_saludestetica/profilecard/?igsh=MTgxbGJwcDh0bHE5eg==" target="_blank">
-							<img src="images/social.png" alt="WhatsApp">
+						<a href="https://www.instagram.com/marieticsalud" target="_blank" rel="noopener noreferrer">
+						  <img src="images/social.png" alt="Instagram">
 						</a>
-						<a href="https://www.tiktok.com/@marietic.salud.es?_t=8rmThNm4JZn&_r=1" target="_blank">
-							<img src="images/tik-tok.png" alt="WhatsApp">
-
-							<a href="https://wa.me/51906631139" target="_blank">
-								<img src="images/whatsapp (1).png" alt="WhatsApp">
+						<a href="https://www.tiktok.com/@marieticsalud" target="_blank" rel="noopener noreferrer">
+						  <img src="images/tik-tok.png" alt="TikTok">
 						</a>
-					</div>
+						  <a href="https://www.facebook.com/share/1ASKZchiaf/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+							<img src="images/facebook.png" alt="Facebook">
+						</a>
+					  </div>
+					  
 				
-			</div>
-			<div class="fh5co-copyright ">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<p class="fh5co-left"><small>&copy; 2024 <a href="index.html">Todos los derechos reservados.</small></p></a>
-							<p class="fh5co-right"> Web design <a href="">kevyn.web@gmail.com</p>
+					  <section id="fh5co-features" style="background-color: #f7f7f7;">
+						<div class="container">
+							<div class="row text-center">
+								<div class="col-md-12">
+									<h2 class="fh5co-lead animate-box">Nuestra ubicación</h2>
+									<div class="row">
+										<!-- Map column -->
+										<div class="col-md-6 animate-box">
+											<!-- Fixed map container with explicit height -->
+											<div id="map" style="height: 300px; width: 100%; margin-bottom: 20px;"></div>
+										</div>
+										
+										<!-- Contact info column -->
+										<div class="col-md-6 animate-box">
+											<div class="fh5co-feature">
+												<h3>Visítanos</h3>
+												<p>
+													<strong>Dirección:</strong> Av. Alfredo Benavides 264, Miraflores, Lima<br>
+													<strong>Horario:</strong> Lunes a Viernes: 09:00 - 20:00<br>
+													Sábados: 09:00 - 20:00<br>
+													<strong>Whatsapp:</strong> <a href="https://wa.me/51906631139?text=Hola%20👋%2C%20vi%20la%20p%C3%A1gina%20web%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%3A" target="_blank" rel="noopener noreferrer">+51 906 631 139</a><br>
+													<strong>Email:</strong> <a href="mailto:info@marietic.com" target="_blank" rel="noopener noreferrer">info@marietic.com</a>
+												</p>
+												<a href="https://maps.app.goo.gl/WyHfDsyRaBGDxhFM6" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Cómo llegar</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			</footer>
+					</section>
+					
+					<!-- Script section moved outside of HTML structure -->
+					<script>
+						document.addEventListener('DOMContentLoaded', function() {
+							// Initialize map only when DOM is fully loaded
+							var map = L.map('map').setView([-12.1245504, -77.0309146], 16);
+							
+							L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+								attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+							}).addTo(map);
+							
+							var marker = L.marker([-12.1245504, -77.0309146]).addTo(map);
+							marker.bindPopup("<b>Marietic - Lifting de Pestañas</b><br><a href='https://maps.app.goo.gl/WyHfDsyRaBGDxhFM6' target='_blank' rel='noopener noreferrer'>Ver en Google Maps</a>").openPopup();
+						});
+					</script>
+					
+					
+					
+					<!-- Footer -->
+					<footer id="fh5co-footer">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 text-center">
+									<p>&copy; 2025 Marietic Salud & Estética. Todos los derechos reservados. <span>Diseñado <i class="icon-heart"></i> por <a href="mailto:kevyn.web@gmail.com?subject=Consulta%20sobre%20diseño%20web&body=Hola%2C%20me%20interesa%20saber%20más%20sobre%20tus%20servicios." target="_blank" rel="noopener noreferrer">kevyn.web</a></span></p>
+								</div>
+							</div>
+						</div>
+					</footer>
 			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 			<!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -396,6 +513,21 @@
 			});
 		});
 	</script>
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Organization",
+		  "name": "Marietic Salud & Estética",
+		  "url": "https://www.marietic.com",
+		  "logo": "https://www.marietic.com/images/logo-marietic.svg",
+		  "image": "https://www.marietic.com/images/logo-marietic.svg",
+		  "sameAs": [
+			"https://www.facebook.com/share/1ASKZchiaf",
+			"https://www.instagram.com/marieticsalud",
+			"https://www.tiktok.com/@marieticsalud"
+		  ]
+		}
+		</script>
 	
 
 	</body>
